@@ -1,4 +1,4 @@
-# minimal-react-webpack-babel-setup
+# react-webpack-boilerplate
 
 TODO: add build status github to top of this file, the code snippet is located in git stash: "build status github readme file"
 
@@ -11,8 +11,8 @@ TODO: add build status github to top of this file, the code snippet is located i
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
-* cd minimal-react-webpack-babel-setup
+* `git clone git@github.com:sjondegast/react-webpack-boilerplate.git`
+* cd react-webpack-boilerplate
 * npm install
 * npm start
 * visit `http://localhost:8080/`
