@@ -7,7 +7,7 @@ const title = 'react-webpack-boilerplate';
 
 ReactDOM.render(
   <App title={title} />,
-  document.getElementById('app')
+  document.getElementById('app'),
 );
 
 module.hot.accept();
