@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/sjondegast/react-webpack-boilerplate.git"
   },
+  "homepage": "https://github.com/sjondegast/react-webpack-boilerplate.git",
   "keywords": [
     "react 16",
     "webpack 4",
