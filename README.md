@@ -1,7 +1,6 @@
 # minimal-react-webpack-babel-setup
 
-// keep this, just adjust it to my own
-[![Build Status](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup.svg?branch=master)](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/rwieruch/minimal-react-webpack-babel-setup.svg)](https://greenkeeper.io/)
+TODO: add build status github to top of this file, the code snippet is located in git stash: "build status github readme file"
 
 ## Features
 
