@@ -8,6 +8,8 @@ TODO: add build status github to top of this file, the code snippet is located i
 - Webpack 4
 - Babel 7
 - Hot Module Replacement
+- code style and linting: eslint & prettier
+- HtmlWebpackPlugin
 
 ## Installation
 
