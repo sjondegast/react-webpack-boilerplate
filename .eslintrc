@@ -15,12 +15,15 @@
         "mocha": true
     },
     "plugins": ["prettier", "react", "jsx-a11y"],
-    "extends": ["airbnb", "plugin:prettier/recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+    "extends": ["airbnb", "plugin:prettier/recommended", "plugin:react/recommended"],
     "rules": {
         "prettier/prettier": ["error"],
         "react/jsx-filename-extension": [1, {
             "extensions": [".js", ".jsx"]
         }],
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": true
+        }]
     }
 }

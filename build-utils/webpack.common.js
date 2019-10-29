@@ -1,10 +1,9 @@
-const webpack = require('webpack');
+const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -18,7 +17,6 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'react-webpack-boilerplate',
@@ -26,12 +24,8 @@ module.exports = {
     }),
   ],
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, '../', 'dist'),
     publicPath: '/',
     filename: 'bundle.js',
-  },
-  devServer: {
-    contentBase: './dist',
-    hot: true,
   },
 };
