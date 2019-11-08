@@ -1,0 +1,10 @@
+.title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 4em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  line-height: 1;
+  margin-top: 0;
+  color: blueviolet;
+}
