@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ({ title = 'Title atom' }) => {
-  return <h1>{title}</h1>;
-};
+import styles from './style.css';
+
+const Title = ({ title = 'Title atom' }) => (
+  <h1 className={styles.title}>{title}</h1>
+);
 
 Title.propTypes = {
   title: PropTypes.string,
