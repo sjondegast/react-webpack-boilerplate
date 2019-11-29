@@ -8,4 +8,21 @@ module.exports = {
       path: './.env.production',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        exclude: /node_modules/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
