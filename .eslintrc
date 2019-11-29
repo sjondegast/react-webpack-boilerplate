@@ -14,7 +14,7 @@
         "jest": true,
         "mocha": true
     },
-    "plugins": ["prettier", "react", "jsx-a11y"],
+    "plugins": ["prettier", "react"],
     "extends": ["airbnb", "plugin:prettier/recommended", "plugin:react/recommended"],
     "rules": {
         "prettier/prettier": ["error"],

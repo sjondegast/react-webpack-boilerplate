@@ -1,0 +1,3 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/sjondegast/react-webpack-boilerplate.wiki.git

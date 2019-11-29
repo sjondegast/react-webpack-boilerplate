@@ -10,6 +10,23 @@ module.exports = {
       path: './.env.development',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        exclude: /node_modules/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+        ],
+      },
+    ],
+  },
   devServer: {
     contentBase: './dist',
     hot: true,
