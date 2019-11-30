@@ -1,4 +1,3 @@
-const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -23,14 +22,13 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.(svg|png|je?pg|gif)$/i,
         use: {
           loader: 'file-loader',
           options: {
             name: '[name].[hash].[ext]',
             outputPath: 'assets',
             esModule: false,
-            // path: path.resolve(__dirname, './dist/', 'assets'),
           },
         },
       },
