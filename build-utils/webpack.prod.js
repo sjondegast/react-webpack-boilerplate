@@ -1,4 +1,5 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
+    new CleanWebpackPlugin(),
     new Dotenv({
       path: './.env.production',
     }),
