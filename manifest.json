@@ -1,21 +1,13 @@
 {
+  "lang": "en",
   "short_name": "boilerplate",
   "name": "webpack 4, babel 7, react boilerplate",
-  "icons": [
-    {
-      "src": "src/assets/icons/icon.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "src/assets/icons/icon.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "/maps/?source=pwa",
+  "description": "This Boilerplate is a starter for react projects that use webpack 4 and babel 7",
+  "icons": [],
+  "start_url": ".",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/maps/",
+  "orientation": "landscape",
+  "scope": "/",
   "theme_color": "#3367D6"
 }
