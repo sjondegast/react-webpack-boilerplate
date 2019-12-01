@@ -73,7 +73,8 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "recompose": "^0.30.0",
-    "sass": "^1.23.3"
+    "sass": "^1.23.3",
+    "terser-webpack-plugin": "^2.2.1"
   },
   "engines": {
     "node": ">= 12.13.0",

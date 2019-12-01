@@ -1,7 +1,9 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const Dotenv = require('dotenv-webpack');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -9,6 +11,9 @@ module.exports = {
     path: path.resolve(__dirname, '../', 'dist'),
     publicPath: '/',
     filename: '[name].[contentHash].bundle.js',
+  },
+  optimization: {
+    minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
   },
   devtool: 'source-map',
   plugins: [
