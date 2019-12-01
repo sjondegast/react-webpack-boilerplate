@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
@@ -11,6 +12,9 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].[contentHash].css',
+    }),
     new CleanWebpackPlugin(),
     new Dotenv({
       path: './.env.production',
@@ -22,7 +26,7 @@ module.exports = {
         test: /\.s?css$/,
         exclude: /node_modules/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
