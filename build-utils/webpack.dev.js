@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 
@@ -14,6 +15,10 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new Dotenv({
       path: './.env.development',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'react-webpack-boilerplate',
+      template: './src/index.html',
     }),
   ],
   module: {

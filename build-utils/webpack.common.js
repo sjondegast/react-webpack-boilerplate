@@ -1,16 +1,8 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
   entry: {
     main: './src/index.js',
     vendor: './src/vendor.js',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'react-webpack-boilerplate',
-      template: './src/index.html',
-    }),
-  ],
   module: {
     rules: [
       {
@@ -24,7 +16,4 @@ module.exports = {
       },
     ],
   },
-  // resolve: {
-  //   extensions: ['*', '.js', '.jsx'],
-  // },
 };

@@ -1,5 +1,6 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -13,16 +14,27 @@ module.exports = {
     filename: '[name].[contentHash].bundle.js',
   },
   optimization: {
-    minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
+    minimizer: [
+      new OptimizeCssAssetsPlugin(),
+      new TerserPlugin(),
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+    ],
   },
   devtool: 'source-map',
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].[contentHash].css',
-    }),
     new CleanWebpackPlugin(),
     new Dotenv({
       path: './.env.production',
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contentHash].css',
     }),
   ],
   module: {
