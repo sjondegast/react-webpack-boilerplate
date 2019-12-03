@@ -23,6 +23,7 @@ module.exports = {
       new TerserPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html',
+        favicon: 'favicon.ico',
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -89,7 +90,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[contenthash].[ext]',
-            outputPath: 'images',
+            outputPath: 'assets',
             esModule: false,
           },
         },
