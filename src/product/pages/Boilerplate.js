@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../../system/Atoms/title';
+import Title from '../../system/Atoms/title/Title';
 
 const App = () => {
   return (
