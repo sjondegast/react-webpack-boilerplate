@@ -21,6 +21,7 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       title: 'react-webpack-boilerplate',
       template: './public/index.html',
+      favicon: './public/favicon.ico',
     }),
   ],
   module: {
