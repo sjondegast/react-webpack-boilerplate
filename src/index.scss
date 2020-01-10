@@ -1,15 +1,10 @@
 @charset 'utf-8';
 
-// Configuration and helpers
 
-// Abstracts
-@import './styles/abstracts/variables';
-@import './styles/abstracts/mixins';
+html {
+    box-sizing: border-box;
+}
 
-// Vendor
-@import "./styles/vendor/normalize/normalize.scss";
-
-// Base
-@import './styles/base/base';
-@import './styles/base/helpers';
-@import './styles/base/typography';
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

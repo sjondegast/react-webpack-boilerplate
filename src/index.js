@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './product/pages/Boilerplate';
+import App from './App';
 
 import './index.scss';
-// require('./index.scss');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
