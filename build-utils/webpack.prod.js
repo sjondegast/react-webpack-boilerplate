@@ -7,10 +7,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const merge = require('webpack-merge');
+const common = require('./webpack.common');
 
 const ManifestSeedData = require('../manifest.json');
 
-module.exports = {
+module.exports = merge(common, {
   mode: 'production',
   output: {
     path: path.resolve(__dirname, '../', 'dist'),
@@ -97,4 +99,4 @@ module.exports = {
       },
     ],
   },
-};
+});

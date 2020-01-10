@@ -1,9 +1,11 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-const Dotenv = require('dotenv-webpack');
+const merge = require('webpack-merge');
+const common = require('./webpack.common');
 
-module.exports = {
+module.exports = merge(common, {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, '../', 'dist'),
@@ -54,4 +56,4 @@ module.exports = {
     contentBase: './dist',
     hot: true,
   },
-};
+});
