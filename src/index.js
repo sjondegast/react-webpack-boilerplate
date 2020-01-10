@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Boilerplate from './Boilerplate/Boilerplate';
 import './index.scss';
+import App from './App';
 
-ReactDOM.render(<Boilerplate />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 if (module.hot) {
   module.hot.accept();

@@ -20,7 +20,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       title: 'react-webpack-boilerplate',
-      template: './src/index.html',
+      template: './public/index.html',
     }),
   ],
   module: {

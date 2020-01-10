@@ -3,7 +3,13 @@
   "short_name": "boilerplate",
   "name": "webpack 4, babel 7, react boilerplate",
   "description": "This Boilerplate is a starter for react projects that use webpack 4 and babel 7",
-  "icons": [],
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
   "start_url": ".",
   "background_color": "#3367D6",
   "display": "standalone",

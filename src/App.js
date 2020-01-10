@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Boilerplate = () => {
+const App = () => {
   return (
     <div>
       <h1>Webpack, Babel, React Boilerplate</h1>
@@ -8,4 +8,4 @@ const Boilerplate = () => {
   );
 };
 
-export default Boilerplate;
+export default App;
