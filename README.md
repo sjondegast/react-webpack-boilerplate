@@ -19,8 +19,8 @@ TODO: add build status github to top of this file, the code snippet is located i
 - npm start
 - visit `http://localhost:8080/`
 
-## test build webpack with http-server TODO: cd project root + run http-server code blocks readme...
+## Run production build and serve the dist folder with live-server
 
 - cd to project root
-- run npm run build //npm script
-- run http-server dist from terminal
+- npm run build
+- live-server ./dist
